@@ -32,7 +32,6 @@ export default function Section({
 
   const addItemToSection = (id) => {
     setTasks((prev) => {
-      console.log("prev", prev);
       const mTasks = prev.map((task) => {
         if (task.id === id) {
           return { ...task, status: status };

@@ -7,7 +7,6 @@ export default function ListTasks({ tasks, setTasks }) {
   const [closed, setClosed] = useState([]);
 
   useEffect(() => {
-    console.log(tasks);
     const filterTodos = tasks.filter((task) => task.status === "todo");
     const filterInProgress = tasks.filter(
       (task) => task.status === "inprogress"
